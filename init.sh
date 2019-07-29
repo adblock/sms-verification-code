@@ -24,7 +24,7 @@ mkdir -p /home/sms/inbox/5650
 mkdir -p /home/sms/inbox/6910
 mkdir -p /home/sms/inbox/6912
 mkdir -p /home/sms/inbox/6913
-mkdir -p /home/pi/sms/inbox/test
+mkdir -p /home/sms/inbox/test
 
 apt install gammu
 apt install gammu-smsd
