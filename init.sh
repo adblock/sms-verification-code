@@ -30,4 +30,4 @@ chmod -R 777 /home/sms
 apt install gammu
 apt install gammu-smsd
 
-cp gammurc /etc/gammurc
+cp ./conf/gammurc /etc/gammurc

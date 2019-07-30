@@ -1,12 +1,16 @@
 root 用户执行 init.sh 安装 gammu gammu-smsd, cp gammurc 到/etc
 
-gammurc中有相关配置
+gammurc 中有相关配置
 
 
-## 配置文件
+## 配置文件 说明
+gammurc gammu 配置文件
+
 将gammurc文件复制到 /etc
 
 gammu-detect 检测硬件
+
+sms-*.conf gammu-smsd 配置文件
 
 
 
