@@ -14,6 +14,8 @@ def get_status():
     str = str + os.popen('gammu -s 2 --identify').read()
     str = str + os.popen('gammu -s 3 --identify').read()
 
+    str = str + "\n"
+
     str = str + os.popen('gammu-detect').read()
 
     print(str)
