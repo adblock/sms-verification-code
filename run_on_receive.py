@@ -43,7 +43,7 @@ def sendmessage(argv):
         # 尾号对应的地址
         urls = URLs[phone_num]
         # 短信页数
-        numparts = int(os.environ['DECODED_PARTS']) 
+        numparts = int(os.environ['DECODED_PARTS'])
         # 短信内容
         message = ''
         # 短信页判断

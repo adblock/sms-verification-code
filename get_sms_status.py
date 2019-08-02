@@ -8,11 +8,14 @@ def get_status():
     url = 'https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'
 
     str = ""
-    str = str + os.popen('gammu-detect').read()
+
     str = str + os.popen('gammu --identify').read()
     str = str + os.popen('gammu -s 1 --identify').read()
     str = str + os.popen('gammu -s 2 --identify').read()
     str = str + os.popen('gammu -s 3 --identify').read()
+
+    str = str + os.popen('gammu-detect').read()
+
     print(str)
     string_text = {
         "msgtype": "text",
