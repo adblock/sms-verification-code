@@ -19,7 +19,7 @@
 #  gammu -s 2 --identify
 #  gammu -s 3 --identify
 
-
+# 短信文件夹
 mkdir -p /home/sms/inbox/5650
 mkdir -p /home/sms/inbox/6910
 mkdir -p /home/sms/inbox/6912
@@ -31,3 +31,4 @@ apt install gammu
 apt install gammu-smsd
 
 cp ./conf/gammurc /etc/gammurc
+cp ./conf/99-com.rules /etc/udev/rules.d/99-com.rules
