@@ -5,7 +5,7 @@ import requests
 import json
 
 def get_status():
-    url = 'https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'
+    url = 'https://oapi.dingtalk.com/robot/send?access_token=5adb0ed002a46761df517eacee2a99ba285c613891adf110255bce2ea326a047'
 
     str = ""
 

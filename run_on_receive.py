@@ -25,15 +25,11 @@ def sendmessage(argv):
 
     # 钉钉机器人地址
     URLs = {
-                '6987': ['https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'],
-                '6910': ['https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'],
-                '6912': ['https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'],
-                '6913': ['https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'],
-                '5650': [
-                    'https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47', # 机器人1号
-                    'https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47', # 机器人2号
-                    'https://oapi.dingtalk.com/robot/send?access_token=f8c7073ed5bef85b7ae86fff35fe6915266f26bb0d0f3de614d58f928a14df47'  # 机器人3号
-                ]
+                '6987': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
+                '6910': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
+                '6912': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
+                '6913': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
+                '5650': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08']
             }
     try:
         # 发送结果

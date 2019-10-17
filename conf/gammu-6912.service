@@ -1,0 +1,10 @@
+[Unit]
+Description=gammu 6912 
+After=syslog.target network.target nss-lookup.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/gammu-smsd -c /home/jupin/sms-verification-code/conf/sms-6912.conf
+Restart=always
+RestartSec=5
+[Install]
+WantedBy=default.target
