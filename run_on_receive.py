@@ -4,6 +4,7 @@ import os
 import sys
 import requests
 import json
+import time
 
 def sendmessage(argv):
     # 短信标记 只转发包含以下字段的短信
@@ -56,9 +57,10 @@ def sendmessage(argv):
                 string_text = {
                     "msgtype": "markdown",
                     "markdown": {
-                        "title": '尾号' + phone_num,
+                        "title": '尾号' + phone_num + ':',
                         "text": "#### 尾号 " + phone_num + ": \n" +
-                            '   >' + message
+                            '>' + message + ' \n' + 
+                            '>>' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
                         }
                 }
                 string_text = json.dumps(string_text)
