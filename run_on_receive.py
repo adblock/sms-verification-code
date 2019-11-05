@@ -30,7 +30,10 @@ def sendmessage(argv):
                 '6910': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
                 '6912': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
                 '6913': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08'],
-                '5650': ['https://oapi.dingtalk.com/robot/send?access_token=bcc01fc3ec0ef36c9adae04dbc874baf981fc7a766c2860d3e0ea7e9c6a72f08']
+                '5650': [
+                    'https://oapi.dingtalk.com/robot/send?access_token=e26fd938d2ac477e0d9cf0f61bc108a86f271002f4600edcaabb6ba6e345b6b4',
+                    'https://oapi.dingtalk.com/robot/send?access_token=764a749c0bd635de1f4d17afffaad30e037dd954f54ebee223df26bbfbb7f369'
+                    ]
             }
     try:
         # 发送结果
