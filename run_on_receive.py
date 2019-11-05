@@ -54,16 +54,16 @@ def sendmessage(argv):
                 varname = 'DECODED_%d_TEXT' % i
                 if varname in os.environ:
                     message = message + os.environ[varname]
-
-        # 屏蔽京东用户名
-        replace_start = message.find('用户')
-        replace_end = message.find(',')
-        if replace_start != -1 and replace_end != -1:
-            message = message[:replace_start+2] + '*****' + message[replace_end:]
-
         # 判断短信标记
         for sign in signs:
             if sign in message:
+
+                # 屏蔽京东用户名
+                replace_start = message.find('用户')
+                replace_end = message.find(',')
+                if replace_start != -1 and replace_end != -1:
+                    message = message[:replace_start + 2] + '*****' + message[replace_end:]
+
                 string_text = {
                     "msgtype": "markdown",
                     "markdown": {
