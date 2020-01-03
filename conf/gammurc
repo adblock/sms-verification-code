@@ -58,13 +58,13 @@ name = Phone on USB serial port 1a86 USB2.0-Serial
 connection = at
 
 # 3601
-[gammu3]
+[gammu4]
 device = /dev/ttyUSB_sms_3601
 name = Phone on USB serial port 1a86 USB2.0-Serial
 connection = at
 
 # 8059
-[gammu3]
+[gammu5]
 device = /dev/ttyUSB_sms_8059
 name = Phone on USB serial port 1a86 USB2.0-Serial
 connection = at
