@@ -5,6 +5,7 @@ import sys
 import requests
 import json
 import time
+from save_sms_to_mongo import save_sms
 
 def sendmessage(argv):
     # 短信标记 只转发包含以下字段的短信
@@ -74,6 +75,7 @@ def sendmessage(argv):
                         }
                 }
                 string_text = json.dumps(string_text)
+
                 for url in urls:
                     res = requests.post(
                         url,
@@ -81,6 +83,12 @@ def sendmessage(argv):
                         headers={"Content-Type": "application/json ;charset=utf-8 "}
                     )
                     send_result.append(res)
+                # 存储数据到mongo
+                save_sms({
+                    "phone_num": phone_num,
+                    "message": message,
+                    "time":time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+                })
                 break
         else:
             print('do not send')
@@ -90,4 +98,4 @@ def sendmessage(argv):
         print(send_result)
 
 if __name__ == '__main__':
-    sendmessage(sys.argv)
+   sendmessage(sys.argv)
