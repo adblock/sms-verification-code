@@ -34,7 +34,15 @@ def sendmessage(argv):
                 '5650': [
                     'https://oapi.dingtalk.com/robot/send?access_token=e26fd938d2ac477e0d9cf0f61bc108a86f271002f4600edcaabb6ba6e345b6b4',
                     'https://oapi.dingtalk.com/robot/send?access_token=764a749c0bd635de1f4d17afffaad30e037dd954f54ebee223df26bbfbb7f369'
-                    ]
+                    ],
+                '3601': [
+                    'https://oapi.dingtalk.com/robot/send?access_token=e26fd938d2ac477e0d9cf0f61bc108a86f271002f4600edcaabb6ba6e345b6b4',
+                    ],
+                '8059': [
+                    'https://oapi.dingtalk.com/robot/send?access_token=e26fd938d2ac477e0d9cf0f61bc108a86f271002f4600edcaabb6ba6e345b6b4',
+                    ]    
+                    
+                        
             }
     try:
         # 发送结果

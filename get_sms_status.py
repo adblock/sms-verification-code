@@ -13,6 +13,8 @@ def get_status():
     str = str + os.popen('gammu -s 1 --identify').read()
     str = str + os.popen('gammu -s 2 --identify').read()
     str = str + os.popen('gammu -s 3 --identify').read()
+    str = str + os.popen('gammu -s 4 --identify').read()
+    str = str + os.popen('gammu -s 5 --identify').read()
 
     str = str + "\n"
 
