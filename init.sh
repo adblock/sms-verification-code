@@ -31,8 +31,6 @@ cp ../conf/gammu-6910.service /etc/systemd/system/gammu-6910.service
 cp ../conf/gammu-6912.service /etc/systemd/system/gammu-6912.service
 cp ../conf/gammu-6913.service /etc/systemd/system/gammu-6913.service
 cp ../conf/gammu-5650.service /etc/systemd/system/gammu-5650.service
-cp ../conf/gammu-3601.service /etc/systemd/system/gammu-3601.service
-cp ../conf/gammu-8059.service /etc/systemd/system/gammu-8059.service
 
 systemctl daemon-reload
 
@@ -40,7 +38,5 @@ systemctl start gammu-6910
 systemctl start gammu-6912
 systemctl start gammu-6913
 systemctl start gammu-5650
-systemctl start gammu-3601
-systemctl start gammu-8059
 
 cp ./conf/99-com.rules /etc/udev/rules.d/99-com.rules
