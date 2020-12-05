@@ -24,13 +24,14 @@ chmod -R 777 /home/sms
 
 apt install gammu
 apt install gammu-smsd
+pip3 install pymongo
 
 cp ./conf/gammurc /etc/gammurc
 
-cp ../conf/gammu-6910.service /etc/systemd/system/gammu-6910.service
-cp ../conf/gammu-6912.service /etc/systemd/system/gammu-6912.service
-cp ../conf/gammu-6913.service /etc/systemd/system/gammu-6913.service
-cp ../conf/gammu-5650.service /etc/systemd/system/gammu-5650.service
+cp ./conf/gammu-6910.service /etc/systemd/system/gammu-6910.service
+cp ./conf/gammu-6912.service /etc/systemd/system/gammu-6912.service
+cp ./conf/gammu-6913.service /etc/systemd/system/gammu-6913.service
+cp ./conf/gammu-5650.service /etc/systemd/system/gammu-5650.service
 
 systemctl daemon-reload
 
