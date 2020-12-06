@@ -17,9 +17,6 @@ mkdir -p /home/sms/inbox/5650
 mkdir -p /home/sms/inbox/6910
 mkdir -p /home/sms/inbox/6912
 mkdir -p /home/sms/inbox/6913
-mkdir -p /home/sms/inbox/3601
-mkdir -p /home/sms/inbox/8059
-mkdir -p /home/sms/inbox/test
 chmod -R 777 /home/sms
 
 apt install gammu
