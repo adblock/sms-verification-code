@@ -45,6 +45,7 @@ def sendmessage(argv):
                         
             }
     try:
+        print(os.environ)
         # 发送结果
         send_result = []
         # 手机尾号
@@ -52,17 +53,19 @@ def sendmessage(argv):
         # 尾号对应的地址
         urls = URLs[phone_num]
         # 短信页数
-        numparts = int(os.environ['DECODED_PARTS'])
+        numparts = int(os.environ['SMS_MESSAGES'])
         # 短信内容
         message = ''
         # 短信页判断
         if numparts == 0:
             message = os.environ['SMS_1_TEXT']
         else:
-            for i in range(0, numparts):
-                varname = 'DECODED_%d_TEXT' % i
+            for i in range(1, numparts+1):
+                varname = 'SMS_%d_TEXT' % i
+                print(varname)
                 if varname in os.environ:
                     message = message + os.environ[varname]
+        print(message)
         # 判断短信标记
         for sign in signs:
             if sign in message:
